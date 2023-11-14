@@ -1,0 +1,52 @@
+<!--hyper text markup lanuages>--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h4{
+            color: darkgreen;
+            font-size: 70px;
+            font-family: Lucida Sans, Geneva, Verdana;
+        }
+
+        marquee{
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="color: blueviolet;font-size:50px; font-family: Franklin Gothic Medium;">Pagina Principal</h2>
+     
+    <marquee><h4>estamos iniciando o HTML</h4></marquee>
+
+
+    <button id="botao"> Click here </button>
+        
+    <script>
+        var botao = document.getElementById("botao");
+        botao.onclick = function(){
+            alert("Botão Clicado com Sucesso! ")
+        }
+
+    </script>
+   
+   
+
+    <h6>seja bem vindo!, {{ .Nome }}</h6>
+</body>
+</html>
+
+
+<!--
+    {
+        Nome: "joão"
+        Email: "..."
+    }
+-->
